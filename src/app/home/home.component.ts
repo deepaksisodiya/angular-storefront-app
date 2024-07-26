@@ -5,11 +5,18 @@ import { ProductComponent } from './../product/product.component';
 import { CommonModule } from '@angular/common';
 import { Paginator, PaginatorModule } from 'primeng/paginator';
 import { ButtonModule } from 'primeng/button';
+import { EditPopupComponent } from '../components/edit-popup/edit-popup.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ProductComponent, CommonModule, PaginatorModule, ButtonModule],
+  imports: [
+    ProductComponent,
+    CommonModule,
+    PaginatorModule,
+    ButtonModule,
+    EditPopupComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
